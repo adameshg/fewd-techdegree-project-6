@@ -77,11 +77,11 @@ function checkWin() {
         overlay.style.display = 'flex';
         overlay.className = 'win';
         overlay.querySelector('h2').textContent = 'You won!';
-        overlay.querySelector('.btn__reset').textContent = 'Play Again';
+        overlay.querySelector('.btn__reset').style.display = 'none';
     } else if (missed >= 5) {
         overlay.style.display = 'flex';
         overlay.className = 'lose';
         overlay.querySelector('h2').textContent = 'You lost :(';
-        overlay.querySelector('.btn__reset').textContent = 'Play Again';
+        overlay.querySelector('.btn__reset').style.display = 'none';
     }
 }
